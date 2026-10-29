@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- Header Card (Membentang di atas) -->
+    <div class="header-card">
+       <h1>🌐 HTML Learning Project</h1> 
+       <p>Master the Building Blocks of the Web</p>
+    </div>
+
+    <!-- Card 1: What is HTML? -->
+    <div class="card">
+       <h2>🚀 What is HTML?</h2>
+       <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.</p>
+       <p>Key Points:</p>
+       <ul>
+           <li>HyperText: Text with links to other texts</li>
+           <li>Markup: A way to annotate text to show structure and meaning</li>
+           <li>Language: A set of rules and syntax for creating web content</li>
+       </ul>
+       <h2>🏗️How HTML Works</h2>
+<p>HTML uses tags to define elements. Tags are keywords surrounded by angle brackets like <code> &lt;tagname&gt;</code>. Most tags come in pairs:</p>
+<pre>&lt;tagname&gt; Content goes here &lt;/tagname&gt; &lt;h1&gt;This is a heading&lt;/h1&gt; &lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
+    </div>
+
+    <!-- Card 2: Basic HTML Structure -->
+    <div class="card">
+       <h2>📋 Basic HTML Structure</h2>
+       <p>Every HTML document follows this basic structure:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta name="viewport" content="width=device-width, 
+initial-scale=1.0"&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;&lt;p&gt;This is my first 
+paragraph.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+
+       <h3>Structure Breakdown:</h3> 
+       <ul>
+           <li><strong><code>&lt;!DOCTYPE html&gt;</code></strong>: Tells the browser this is HTML5</li>
+           <li><strong><code>&lt;html&gt;</code></strong>: Root element of the page</li>
+           <li><strong><code>&lt;head&gt;</code></strong>: Contains metadata (not visible on page)</li>
+           <li><strong><code>&lt;body&gt;</code></strong>: Contains visible content</li>
+       </ul> 
+    </div>
+
+    <!-- Card 3: Essential HTML Tags -->
+    <div class="card">
+       <h2>🏷️ Essential HTML Tags</h2> 
+       <table>
+         <thead>
+           <tr>
+             <th>Tag</th>
+             <th>Purpose</th>
+             <th>Example</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td><code>&lt;h1&gt; - &lt;h6&gt;</code></td>
+             <td>Headings</td>
+             <td><code>&lt;h1&gt;Title&lt;/h1&gt;</code></td>
+           </tr>
+           <tr>
+             <td><code>&lt;p&gt;</code></td>
+             <td>Paragraphs</td>
+             <td><code>&lt;p&gt;Text&lt;/p&gt;</code></td>
+           </tr>
+           <tr>
+             <td><code>&lt;a&gt;</code></td>
+             <td>Links</td>
+             <td><code>&lt;a href="#"&gt;Link&lt;/a&gt;</code></td>
+           </tr>
+           <tr>
+             <td><code>&lt;img&gt;</code></td>
+             <td>Images</td>
+             <td><code>&lt;img src="pic.jpg"&gt;</code></td>
+           </tr>
+         </tbody>
+       </table>
+   
+    <!-- Card 5: Live Examples -->
+   
+      <b><p>🎯 Live Examples</p></b>
+       <center><h1>This is an H1 heading</h1></center>
+       <h2>This is an H2 heading</h2>
+       <h3>This is an H3 heading</h3>
+       <p>This is a paragraph with <b>bold</b> and <i>italic</i> text.</p>
+  <p>Here's a [sample link](#).</p>
+       
+       <h4>Unordered List:</h4>
+       <ul>
+         <li>First item</li>
+         <li>Second item</li>
+         <li> Third item </li> 
+       </ul>
+       <h4>Ordered List:</h4>
+       <ol>
+         <li>Step one</li>
+         <li>Step two</li>
+         <li> Step three </li>
+       </ol>
+   </div>
+
+    <!-- Card 6: HTML Forms -->
+    <div class="card">
+       <h2>📝 HTML Forms</h2>
+       <p>Forms allow users to input data. Example:</p>
+       <pre><code>
+&lt;form&gt;&lt;label for="name"&gt;Name:&lt;/label&gt;&lt;input type="text" id="name" name="name"&gt;&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;&lt;label for="subject"&gt;Subject:&lt;/label&gt;&lt;input type="subject" id="subject" name="subject"&gt;
+&lt;label for="message"&gt;Message:&lt;/label&gt;&lt;textarea id="message" name="message">&lt;/textarea&gt;&lt;button type="submit"&gt;Submit Form&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+<b><p>Try this form</p></b>
+       <form>
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="name">
+           
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email">
+
+           <label for="subject">Subject:</label>
+           <input type="text" id="subject" name="subject">
+           
+           <label for="message">Message:</label>
+           <textarea id="message" name="message"></textarea>
+           
+           <button type="submit">Submit Form</button>
+       </form>
+    </div>
+
+    <!-- Card 7: HTML Attributes -->
+    <div class="card">
+       <h2>🎨 HTML Attributes</h2>
+       <p>Attributes provide additional information:</p>
+       <pre><code>&lt;!-- Common attributes --&gt;
+   &lt;img src="photo.jpg" alt="A beautiful sunset" width="300" height="200"&gt;
+&lt;a href="https://example.com" target="_blank" title="Visit Example"&gt;Click here&lt;/a&gt;
+&lt;div class="container" id="main-content" style="color: blue;"&gt;Content&lt;/div&gt;</code></pre>
+
+       <p>Important Attributes:</p>
+       <ul>
+         <li><code>id</code> - Unique identifier</li>
+         <li><code>class</code> - Groups elements</li>
+         <li><code>src</code> - Source file</li>
+         <li><code>href</code> - URL for links</li>
+       </ul>
+    </div>
+
+    <!-- Card 8: Tables in HTML -->
+    <div class="card">
+       <h2>📊 Tables in HTML</h2>
+       <p>Tables organize data in rows and columns:</p>
+<pre><code>
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;City&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;John&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;td&gt;New York&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</code></pre>
+
+       <p>Sample Table:</p>
+       <table>
+           <thead>
+               <tr>
+                   <th>Student</th>
+                   <th>Subject</th>
+                   <th>Grade</th>
+                  <th>status</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Alice</td>
+                   <td>Math</td>
+                   <td>A+</td>
+                   <td>Passed</td>
+               </tr>
+               <tr>
+                   <td>Bob</td>
+                   <td>Physics</td>
+                 <td>B</td>
+                <td>Passed</td>
+               </tr>
+                        <tr>
+            <td>Carol Davis</td>
+            <td>Chemistry</td>
+            <td>A</td>
+           <td>Passed</td>
+        </tr>
+
+           </tbody>
+       </table>
+    </div>
+
+    <!-- Card 9: Practice Exercises -->
+    <div class="card">
+       <h2>💻 Practice Exercises</h2>
+       <p>Beginner Tasks:</p>
+       <ol>
+         <li>Create a basic HTML page with a title, heading, and paragraph</li>
+<li>Add an image with alt text</li>
+<li>Create a list of your favorite movies</li>
+<li>Build a simple table with your weekly schedule</li>
+</ol>
+
+       <p>Intermediate Tasks:</p>
+       <ol>
+         <li>Create a contact form with different input types</li>
+<li>Build a navigation menu with links</li>
+<li>Design a simple blog post layout</li>
+<li>Create a photo gallery grid</li>
+
+       </ol>
+    </div>
+
+    <!-- Card 10: Project Structure -->
+    <div class="card">
+       <h2>🗂️ Project Structure</h2>
+      <p>Here's how to organize your HTML project:</p>
+<pre>
+my-website/
+|
+├── index.html (Main page)
+├── about.html (About page)
+├── contact.html (Contact page)
+|
+├── css/
+|   └── styles.css (CSS stylesheets)
+|
+├── js/
+|   └── script.js (JavaScript files)
+|
+└── images/
+    ├── logo.png
+    ├── hero-image.jpg
+    └── gallery/
+        ├── photo1.jpg
+        └── photo2.jpg
+</pre>
+
+
+    <!-- Card 11: Next Steps -->
+    <div class="card">
+       <h2>🎯 Next Steps</h2>
+       <ul>
+         <li>CSS (Cascading Style Sheets)</li>
+         <li>JavaScript</li>
+         <li>Responsive Design</li>
+       </ul>
+    </div>
+
+    <!-- Card 12: Development Tools -->
+    <div class="card">
+       <h2>🔧 Development Tools</h2>
+       <ul>
+         <li>Text Editors: VS Code, Sublime</li>
+         <li>Browsers: Chrome DevTools</li>
+         <li>Version Control: Git & GitHub</li>
+       </ul>
+    </div>
+
+    <!-- Footer Card (Membentang di bawah) -->
+    <div class="footer-card">
+       <h2>🎉 Congratulations!</h2>
+       <p>You've completed the HTML Learning Project! Keep building projects to strengthen your skills.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
