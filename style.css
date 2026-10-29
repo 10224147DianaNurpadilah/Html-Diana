@@ -1,0 +1,289 @@
+
+/* ==================================
+   1. PALET WARNA PINK PASTEL
+================================== */
+:root {
+    --pink-primary: #D96C91;
+    --pink-dark: #A84F72;
+    --pink-soft: #FCE7EF;
+    --pink-light: #FFF5F8;
+    --pink-border: #F2D4E0;
+    --pink-accent: #F4A9C2;
+    --white: #FFFFFF;
+    --text-main: #49313C;
+    --text-muted: #76616B;
+}
+
+/* ==================================
+   2. LATAR BELAKANG HALAMAN
+================================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--pink-light);
+    color: var(--text-main);
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1080px;
+}
+
+/* ==================================
+   3. HEADER UTAMA
+================================== */
+.bg-primary {
+    background: linear-gradient(
+        135deg,
+        var(--pink-primary),
+        var(--pink-dark)
+    ) !important;
+}
+
+.hero-header {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-header h1 {
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.hero-header p {
+    color: #FFF5F8;
+}
+
+/* ==================================
+   4. JUDUL DAN TEKS
+================================== */
+.text-primary {
+    color: var(--pink-dark) !important;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--text-main);
+    line-height: 1.4;
+}
+
+p {
+    color: var(--text-muted);
+}
+
+.fw-semibold,
+.fw-bold {
+    color: var(--text-main);
+}
+
+/* ==================================
+   5. KARTU MATERI
+================================== */
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--pink-border) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 5px 18px rgba(168, 79, 114, 0.07);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(168, 79, 114, 0.14) !important;
+}
+
+.card h2.text-primary,
+.card h3.text-primary {
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--pink-soft);
+}
+
+/* ==================================
+   6. TOMBOL
+================================== */
+.btn-primary {
+    background-color: var(--pink-primary) !important;
+    border-color: var(--pink-primary) !important;
+    color: var(--white) !important;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--pink-dark) !important;
+    border-color: var(--pink-dark) !important;
+    color: var(--white) !important;
+    transform: translateY(-1px);
+}
+
+.btn-primary:focus-visible {
+    outline: 3px solid var(--pink-accent);
+    outline-offset: 3px;
+}
+
+/* ==================================
+   7. TABEL
+================================== */
+.table {
+    --bs-table-color: var(--text-main);
+    --bs-table-bg: transparent;
+    --bs-table-striped-bg: #FFF5F8;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: var(--pink-soft) !important;
+    color: var(--pink-dark);
+    font-weight: 600;
+    border-bottom: 2px solid var(--pink-border);
+    white-space: nowrap;
+}
+
+.table td,
+.table th {
+    padding: 13px 16px;
+    border-color: var(--pink-border);
+}
+
+.table-hover tbody tr:hover > * {
+    background-color: #FFF0F5;
+}
+
+/* ==================================
+   8. FORM INPUT
+================================== */
+.form-label {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.form-control {
+    border: 1px solid var(--pink-border);
+    border-radius: 12px;
+    padding: 11px 13px;
+    color: var(--text-main);
+    background-color: var(--white);
+}
+
+.form-control:focus {
+    border-color: var(--pink-primary);
+    box-shadow: 0 0 0 0.2rem rgba(217, 108, 145, 0.18);
+}
+
+.form-control::placeholder {
+    color: #AD929E;
+}
+
+/* ==================================
+   9. KODE HTML
+================================== */
+code {
+    color: #B23E70;
+    background-color: #FFF0F5;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.font-monospace {
+    line-height: 1.8;
+}
+
+/* Kotak contoh kode tetap gelap */
+.bg-dark {
+    background-color: #382B33 !important;
+}
+
+/* Area contoh tampilan HTML */
+.bg-light {
+    background-color: #FFF8FA !important;
+}
+
+.border {
+    border-color: var(--pink-border) !important;
+}
+
+/* ==================================
+   10. LINK DAN BADGE
+================================== */
+a {
+    color: var(--pink-dark);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--pink-primary);
+}
+
+.badge.bg-success {
+    background-color: var(--pink-primary) !important;
+}
+
+/* ==================================
+   11. FOOTER
+================================== */
+.container > .row:last-child .bg-dark {
+    background: linear-gradient(
+        135deg,
+        var(--pink-dark),
+        #813B5A
+    ) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.container > .row:last-child h2 {
+    color: var(--white);
+}
+
+.container > .row:last-child p {
+    color: #FFF5F8;
+}
+
+/* ==================================
+   12. RESPONSIVE UNTUK HP
+================================== */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-header {
+        padding: 28px !important;
+    }
+
+    .hero-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 20px !important;
+    }
+
+    .table td,
+    .table th {
+        padding: 10px;
+    }
+}
+
+/* ==================================
+   13. KURANGI ANIMASI JIKA DIPERLUKAN
+================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
